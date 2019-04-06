@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "View File";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<form asp-action="ViewFile" method="post" >
+    <div class="row">
+        <div style="margin-bottom:10px">
+            Id: <input name="id" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success">
+                View
+            </button>
+        </div>
+
+    </div>
+</form>

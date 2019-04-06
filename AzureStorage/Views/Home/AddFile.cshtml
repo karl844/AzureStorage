@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Add File";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<form asp-action="AddFile" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div style="margin-bottom:10px"> 
+            <input name="file" type="file" />
+        </div>
+        <div> 
+            <button type="submit" class="btn btn-success">
+                Add
+            </button>
+        </div>
+        
+    </div>
+</form>
